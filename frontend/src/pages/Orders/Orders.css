@@ -1,0 +1,15 @@
+.container{
+    padding: 30px 0px;
+}
+
+.container .heading{
+    font-size: max(2vw, 24px);
+    font-weight: 600;
+}
+
+.container .order-display{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 20px;
+}

@@ -1,0 +1,55 @@
+.order-item{
+    padding: 20px;
+    background: #e2e2e2;
+}
+
+.order-item .order-id{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.order-item .date{
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.order-item span{
+    color: tomato;
+}
+
+.order-item .cart-items-title{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr ;
+    align-items: center;
+    color: grey;
+    font-size: max(1vw, 12px);
+}
+
+.order-item .price{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.order-item .price span{
+    font-size: 30px;
+}
+
+
+.date .NotReceived{
+    background: rgb(255, 121, 121);
+    width: fit-content;
+    padding: 5px 10px;
+    margin-top: 10px;
+    color: white;
+}
+
+.date .Received{
+    background: rgb(121, 255, 177);
+    width: fit-content;
+    padding: 5px 10px;
+    margin-top: 10px;
+    color: white;
+}
