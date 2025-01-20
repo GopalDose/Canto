@@ -15,7 +15,7 @@ app.use(express.json())
 app.use(cors())
 
 app.get("/", (req, res)=>{
-    res.send("Api Working")
+    res.send("Api Working") 
 })
 
 // db connection
@@ -32,4 +32,4 @@ app.get("/",(req,res) =>  {
 
 app.listen(port, ()=>{
     console.log(`Server Started in http://localhost:${port}`)
-})
+})  
