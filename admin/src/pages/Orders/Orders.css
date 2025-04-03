@@ -1,0 +1,279 @@
+.orders-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.orders-container h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.orders-table th, 
+.orders-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.orders-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.orders-table tbody tr:hover {
+  background-color: #f8f8f8;
+}
+
+.order-items {
+  padding-left: 20px;
+  margin: 0;
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+.order-items li {
+  margin-bottom: 4px;
+}
+
+.completed {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.pending {
+  color: #e67e22;
+  font-weight: bold;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.view-btn, .complete-btn, .revert-btn, .close-popup-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.view-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.view-btn:hover {
+  background-color: #2980b9;
+}
+
+.complete-btn {
+  background-color: #27ae60;
+  color: white;
+}
+
+.complete-btn:hover {
+  background-color: #219653;
+}
+
+.revert-btn {
+  background-color: #e67e22;
+  color: white;
+}
+
+.revert-btn:hover {
+  background-color: #d35400;
+}
+
+.close-popup-btn {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.close-popup-btn:hover {
+  background-color: #7f8c8d;
+}
+
+/* Food item styles in the popup */
+.food-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.food-name {
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+}
+
+.food-desc {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #666;
+  font-style: italic;
+}
+
+/* Popup styles */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.order-details-popup {
+  background-color: white;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 800px;
+  max-height: 90vh;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.popup-header h2 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #777;
+  line-height: 1;
+}
+
+.popup-body {
+  padding: 20px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.order-info-section {
+  margin-bottom: 25px;
+}
+
+.info-group h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.info-group p {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+.order-items-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.items-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.items-table th,
+.items-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.items-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.items-table tfoot {
+  font-weight: bold;
+}
+
+.total-label {
+  text-align: right;
+}
+
+.total-value {
+  font-weight: bold;
+}
+
+.popup-footer {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  border-top: 1px solid #e0e0e0;
+  background-color: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+  .orders-table {
+    font-size: 14px;
+  }
+  
+  .orders-table th, 
+  .orders-table td {
+    padding: 8px 10px;
+  }
+  
+  .orders-container {
+    padding: 10px;
+  }
+  
+  .order-details-popup {
+    width: 95%;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .view-btn, .complete-btn, .revert-btn {
+    font-size: 13px;
+    padding: 4px 8px;
+  }
+}
